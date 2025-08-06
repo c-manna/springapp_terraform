@@ -1,0 +1,30 @@
+# Local Terraform state files
+*.tfstate
+*.tfstate.*
+
+# Crash log files
+crash.log
+
+# .terraform directory (contains provider plugins, modules, etc.)
+.terraform/
+
+# Terraform plan output files (optional, but you may want to ignore these as well)
+*.tfplan
+
+# Override files for sensitive or environment-specific variables
+override.tf
+override.tf.json
+*_override.tf
+*_override.tf.json
+
+# Sensitive files (e.g., terraform.tfvars files with credentials or other secrets)
+terraform.tfvars
+*.tfvars
+
+# .terraform.lock.hcl file is optional (lock file for providers)
+.terraform.lock.hcl
+
+# IDE files and directories (specific to your development environment)
+.vscode/
+.idea/
+*.iml
