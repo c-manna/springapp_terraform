@@ -62,6 +62,7 @@ module "rds" {
 # create ASG
 module "asg" {
   source                    = "../modules/asg"
+  userdata_path  = "${path.module}/userdata.sh"  # this is correct, since path.module here = main/
   project_name              = module.vpc.project_name
   rds_db_endpoint           = module.rds.rds_db_endpoint
   private_subnet_az1_id     = module.vpc.private_subnet_az1_id
